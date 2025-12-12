@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Prière | EEMC Savanes Togo</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    </head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html">EEMC Savanes</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">À Propos</a></li>
+                <li><a href="activites.html">Activités</a></li>
+                <li><a href="ressources.html">Ressources</a></li>
+                <li><a href="contact.html" class="active">Contact & Prière</a></li>
+                <li class="bouton-nav-don"><a href="dons.html" class="bouton-don">Faire un Don</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="entete-page-contact">
+            <h1>Contactez l'Église EEMC Savanes</h1>
+            <p>Nous sommes là pour vous. Envoyez-nous un message, une demande de prière, ou venez nous rendre visite.</p>
+        </section>
+
+        <section class="contenu-contact-grille">
+            
+            <div class="colonne-formulaire">
+                <div class="section-priere">
+                    <h2>Confiez-nous vos Sujets de Prière</h2>
+                    <p class="intro-priere">Vos demandes sont traitées avec la plus grande confidentialité par l'équipe pastorale.</p>
+                    
+                    <form name="demande_priere" method="POST" data-netlify="true" class="formulaire-priere">
+                        <input type="hidden" name="form-name" value="demande_priere" />
+                        
+                        <label for="nom">Votre Nom (facultatif)</label>
+                        <input type="text" id="nom" name="Nom">
+                        
+                        <label for="email">Votre Email (pour la réponse)</label>
+                        <input type="email" id="email" name="Email" required>
+
+                        <label for="sujet">Sujet de la Demande</label>
+                        <input type="text" id="sujet" name="Sujet" required>
+
+                        <label for="message">Votre Demande de Prière</label>
+                        <textarea id="message" name="Message" rows="6" required></textarea>
+                        
+                        <button type="submit" class="bouton-soumission">Envoyer ma Demande</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="colonne-info">
+                
+                <div class="coordonnees-generales">
+                    <h2>Coordonnées</h2>
+                    <p><strong>Adresse de l'Église :</strong> EEMC Kpolgdjoal, Dapaong, Togo</p>
+                    <p><strong>Email :</strong> <a href="mailto:jesusemma571@gmail.com">jesusemma571@gmail.com</a></p>
+                    <p>📞 **Moov :** 00228 98888427</p>
+                    <p>📞 **Togocom (Contact principal) :** 00228 92227874</p>
+                </div>
+
+                <div class="horaires-culte">
+                    <h2>Horaires des Cultes</h2>
+                    <ul>
+                        <li>**Culte Dominical :** Dimanche à [Heure]</li>
+                        <li>**Étude Biblique :** Mercredi à [Heure]</li>
+                        <li>**Réunion de Prière :** Vendredi à [Heure]</li>
+                    </ul>
+                </div>
+
+                <div class="carte-localisation">
+                    <h2>Localisation</h2>
+                    <p>L'Église Évangélique de la Mission Chrétienne des Savanes (EEMC Kpolgdjoal) est située à Dapaong, Région des Savanes, Togo.</p>
+                    
+                    <a 
+                        href="https://maps.google.com/?cid=1726478067148970572&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNl" 
+                        target="_blank" 
+                        class="bouton-maps">
+                        Voir sur Google Maps et obtenir l'itinéraire
+                    </a>
+
+                    <p class="aide-localisation">Si vous rencontrez des difficultés pour nous rejoindre, appelez-nous au (+228) 92 22 78 74.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-contenu">
+            <div class="contact-info">
+                <h4>Contactez-Nous</h4>
+                <p>📍 EEMC Kpolgdjoal, Dapaong, Togo</p>
+                <p>📧 <a href="mailto:jesusemma571@gmail.com">jesusemma571@gmail.com</a></p>
+                <p>📞 Moov : 00228 98888427</p>
+                <p>📞 Togocom : 00228 92227874</p>
+            </div>
+            <div class="liens-utiles">
+                <h4>Liens Rapides</h4>
+                <ul>
+                    <li><a href="dons.html">Soutenir la Mission</a></li>
+                    <li><a href="ressources.html">Bibliothèque Gratuite</a></li>
+                    <li><a href="politique.html">Politique de Confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="reseaux-sociaux">
+                <h4>Suivez-Nous</h4>
+                <p>
+                    </p>
+            </div>
+        </div>
+        <div class="droits-auteur">
+            &copy; 2025 EEMC Savanes Togo. Tous droits réservés.
+        </div>
+    </footer>
+
+</body>
+</html>
