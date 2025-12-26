@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEMC Togo - Nos Activités</title>
+    <style>
+        :root {
+            --bleu: #0056b3;
+            --or: #d4af37;
+            --gris-clair: #f8f9fa;
+        }
+
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: white; }
+
+        /* Menu (Identique à l'accueil) */
+        nav { background: white; padding: 20px; display: flex; justify-content: space-around; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .logo-img { height: 50px; }
+        nav ul { list-style: none; display: flex; margin: 0; padding: 0; }
+        nav ul li { margin: 0 15px; }
+        nav ul li a { text-decoration: none; color: var(--bleu); font-weight: bold; }
+
+        /* En-tête de page */
+        .page-header { background: var(--bleu); color: white; padding: 40px 20px; text-align: center; }
+
+        /* Galerie d'images */
+        .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+        .intro-text { text-align: center; margin-bottom: 40px; color: #555; }
+
+        .galerie { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 20px; 
+        }
+
+        .photo-card { 
+            background: var(--gris-clair); 
+            border-radius: 10px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .photo-card:hover { transform: scale(1.02); }
+        .photo-card img { width: 100%; height: 250px; object-fit: cover; }
+        .photo-card-info { padding: 15px; text-align: center; }
+        .photo-card-info h3 { margin: 0; color: var(--bleu); font-size: 1.1rem; }
+        .photo-card-info p { font-size: 0.9rem; color: #666; margin-top: 5px; }
+
+        footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo EEMC" class="logo-img">
+        </div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="activites.html" style="border-bottom: 2px solid var(--or);">Activités</a></li>
+            <li><a href="priere.html">Prière</a></li>
+            <li><a href="ressources.html">Ressources</a></li>
+            <li><a href="dons.html">Dons</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>Rapports d'Activités du Terrain</h1>
+        <p>Découvrez l'œuvre de Dieu dans la Région des Savanes</p>
+    </div>
+
+    <div class="container">
+        <div class="intro-text">
+            <h2>Nos Missions en Images</h2>
+            <p>De Dapaong à Mango, nos équipes parcourent les villages pour apporter la Bonne Nouvelle et soutenir les communautés.</p>
+        </div>
+
+        <div class="galerie">
+            <div class="photo-card">
+                <img src="images/terrain1.jpg" alt="Évangélisation">
+                <div class="photo-card-info">
+                    <h3>Évangélisation de Rue</h3>
+                    <p>Partage de l'évangile dans les villages reculés.</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/terrain2.jpg" alt="Aide sociale">
+                <div class="photo-card-info">
+                    <h3>Actions Sociales</h3>
+                    <p>Distribution de kits scolaires et de vivres.</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/terrain3.jpg" alt="Culte">
+                <div class="photo-card-info">
+                    <h3>Célébrations Communautaires</h3>
+                    <p>Moments de prière et de louange dans nos églises.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 EEMC Togo - Région des Savanes | <a href="politique.html" style="color:white;">Politique de confidentialité</a></p>
+    </footer>
+
+</body>
+</html>

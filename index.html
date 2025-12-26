@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEMC Togo - Accueil</title>
+    <style>
+        :root {
+            --bleu: #0056b3;
+            --or: #d4af37;
+            --fond: #f4f7f6;
+        }
+
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: var(--fond); }
+
+        /* Menu de navigation */
+        nav { background: white; padding: 20px; display: flex; justify-content: space-around; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .logo-img { height: 50px; }
+        nav ul { list-style: none; display: flex; margin: 0; padding: 0; }
+        nav ul li { margin: 0 15px; }
+        nav ul li a { text-decoration: none; color: var(--bleu); font-weight: bold; }
+
+        /* Bannière Colombe */
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/colombe.png');
+            background-size: cover; background-position: center; 
+            height: 450px; display: flex; flex-direction: column; 
+            justify-content: center; align-items: center; color: white; text-align: center;
+        }
+        .hero h1 { font-size: 3rem; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+
+        /* Section Pasteur */
+        .pasteur-section { padding: 50px 20px; max-width: 900px; margin: auto; display: flex; align-items: center; gap: 40px; flex-wrap: wrap; }
+        .pasteur-photo { width: 250px; height: 250px; border-radius: 50%; border: 5px solid var(--or); object-fit: cover; }
+        .pasteur-texte { flex: 1; min-width: 300px; }
+        .pasteur-texte h2 { color: var(--bleu); }
+
+        footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 50px; }
+        .btn-contact { background: var(--or); color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo EEMC" class="logo-img">
+        </div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="activites.html">Activités</a></li>
+            <li><a href="priere.html">Prière</a></li>
+            <li><a href="ressources.html">Ressources</a></li>
+            <li><a href="dons.html">Dons</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>EEMC TOGO</h1>
+        <p>Mission Chrétienne dans la Région des Savanes</p>
+    </header>
+
+    <main>
+        <section class="pasteur-section">
+            <img src="images/pasteur.jpg" alt="Photo du Pasteur" class="pasteur-photo">
+            <div class="pasteur-texte">
+                <h2>Mot de Bienvenue du Pasteur</h2>
+                <p>"Que la paix et la grâce du Seigneur soient avec vous. Nous sommes heureux de vous accueillir sur le site de l'Église Évangélique de la Mission Chrétienne (EEMC) Togo. Notre mission dans les Savanes est de partager l'amour de Christ et de soutenir notre prochain."</p>
+                <p>Soyez bénis durant votre visite.</p>
+                <a href="priere.html" class="btn-contact">Demander une prière</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EEMC Togo - Région des Savanes | <a href="politique.html" style="color:white;">Politique de confidentialité</a></p>
+    </footer>
+
+</body>
+</html>

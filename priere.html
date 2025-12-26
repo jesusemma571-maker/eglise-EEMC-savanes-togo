@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEMC Togo - Demande de Prière</title>
+    <style>
+        :root {
+            --bleu: #0056b3;
+            --or: #d4af37;
+            --fond-prière: #f0f4f8;
+        }
+
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: var(--fond-prière); }
+
+        /* Menu (Identique aux autres pages) */
+        nav { background: white; padding: 20px; display: flex; justify-content: space-around; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .logo-img { height: 50px; }
+        nav ul { list-style: none; display: flex; margin: 0; padding: 0; }
+        nav ul li { margin: 0 15px; }
+        nav ul li a { text-decoration: none; color: var(--bleu); font-weight: bold; }
+
+        /* Contenu de la page */
+        .container { max-width: 700px; margin: 50px auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+        
+        .header-priere { text-align: center; margin-bottom: 30px; }
+        .header-priere h1 { color: var(--bleu); margin-bottom: 10px; }
+        .header-priere p { color: #666; font-style: italic; }
+
+        /* Style du Formulaire */
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: bold; color: #333; }
+        .form-group input, .form-group textarea { 
+            width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; box-sizing: border-box; 
+        }
+        .form-group textarea { resize: vertical; }
+
+        .btn-envoyer { 
+            background: var(--bleu); color: white; border: none; padding: 15px 30px; 
+            border-radius: 8px; font-size: 1.1rem; cursor: pointer; width: 100%; font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn-envoyer:hover { background: #004494; }
+
+        .confidentialite { font-size: 0.8rem; color: #888; text-align: center; margin-top: 20px; }
+
+        footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo EEMC" class="logo-img">
+        </div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="activites.html">Activités</a></li>
+            <li><a href="priere.html" style="border-bottom: 2px solid var(--or);">Prière</a></li>
+            <li><a href="ressources.html">Ressources</a></li>
+            <li><a href="dons.html">Dons</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="header-priere">
+            <h1>Nous prions pour vous</h1>
+            <p>"Confiez vos fardeaux au Seigneur, car Il prend soin de vous."</p>
+        </div>
+
+        <form>
+            <div class="form-group">
+                <label for="nom">Nom complet</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ville">Votre Ville / Village (Région des Savanes ou autre)</label>
+                <input type="text" id="ville" name="ville" placeholder="Ex: Dapaong, Mango, Lomé..." required>
+            </div>
+
+            <div class="form-group">
+                <label for="telephone">Numéro de téléphone (Facultatif)</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="Ex: +228 90 00 00 00">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Votre sujet de prière</label>
+                <textarea id="message" name="message" rows="6" placeholder="Écrivez ici ce que vous souhaitez confier à l'église..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-envoyer">Envoyer ma demande au Pasteur</button>
+        </form>
+
+        <p class="confidentialite">
+            <i class="fas fa-lock"></i> Vos demandes sont strictement confidentielles et ne seront lues que par l'équipe d'intercession de l'EEMC Togo.
+        </p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 EEMC Togo - Région des Savanes | <a href="politique.html" style="color:white;">Politique de confidentialité</a></p>
+    </footer>
+
+</body>
+</html>

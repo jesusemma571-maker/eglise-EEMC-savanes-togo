@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEMC Togo - Ressources Chrétiennes</title>
+    <style>
+        :root {
+            --bleu: #0056b3;
+            --or: #d4af37;
+            --gris-fond: #f9f9f9;
+        }
+
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: var(--gris-fond); }
+
+        /* Menu (Identique) */
+        nav { background: white; padding: 20px; display: flex; justify-content: space-around; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .logo-img { height: 50px; }
+        nav ul { list-style: none; display: flex; margin: 0; padding: 0; }
+        nav ul li { margin: 0 15px; }
+        nav ul li a { text-decoration: none; color: var(--bleu); font-weight: bold; }
+
+        /* En-tête */
+        .header-ressources { background: linear-gradient(135deg, var(--bleu), #003366); color: white; padding: 60px 20px; text-align: center; }
+
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+
+        /* Grille de ressources */
+        .resource-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        .resource-card { background: white; border-radius: 12px; padding: 30px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .resource-card i { font-size: 3rem; color: var(--or); margin-bottom: 20px; display: block; }
+        .resource-card h3 { color: var(--bleu); margin-bottom: 15px; }
+        .resource-card p { color: #666; font-size: 0.95rem; margin-bottom: 20px; }
+
+        /* Boutons */
+        .btn-link { 
+            display: inline-block; background: var(--bleu); color: white; 
+            padding: 12px 25px; text-decoration: none; border-radius: 25px; 
+            font-weight: bold; transition: 0.3s;
+        }
+        .btn-link:hover { background: var(--or); }
+
+        footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 50px; }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo EEMC" class="logo-img">
+        </div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="activites.html">Activités</a></li>
+            <li><a href="priere.html">Prière</a></li>
+            <li><a href="ressources.html" style="border-bottom: 2px solid var(--or);">Ressources</a></li>
+            <li><a href="dons.html">Dons</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-ressources">
+        <h1>Bibliothèque Chrétienne de l'EEMC</h1>
+        <p>Des outils gratuits pour grandir dans votre foi</p>
+    </div>
+
+    <div class="container">
+        <div class="resource-grid">
+            
+            <div class="resource-card">
+                <i class="fas fa-bible"></i>
+                <h3>La Sainte Bible</h3>
+                <p>Accédez à la Bible en ligne gratuitement (plusieurs versions disponibles).</p>
+                <a href="https://www.bible.com/fr" target="_blank" class="btn-link">Lire la Bible</a>
+            </div>
+
+            <div class="resource-card">
+                <i class="fas fa-book-open"></i>
+                <h3>Livres & PDF</h3>
+                <p>Téléchargez des enseignements et des livres chrétiens pour votre édification.</p>
+                <a href="#" class="btn-link">Voir les PDF</a>
+            </div>
+
+            <div class="resource-card">
+                <i class="fas fa-microphone-alt"></i>
+                <h3>Études Bibliques</h3>
+                <p>Retrouvez les résumés des enseignements donnés dans la région des Savanes.</p>
+                <a href="#" class="btn-link">Consulter</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 EEMC Togo - Région des Savanes | <a href="politique.html" style="color:white;">Politique de confidentialité</a></p>
+    </footer>
+
+</body>
+</html>

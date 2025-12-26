@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEMC Togo - Soutenir la Mission</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --bleu: #0056b3;
+            --or: #d4af37;
+            --moov: #00a1e4;
+            --tmoney: #ffcc00;
+            --paypal: #003087;
+            --banque: #4caf50;
+        }
+
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f4f7f6; color: #333; }
+
+        /* Menu */
+        nav { background: white; padding: 20px; display: flex; justify-content: space-around; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .logo-img { height: 50px; }
+        nav ul { list-style: none; display: flex; margin: 0; padding: 0; }
+        nav ul li { margin: 0 15px; }
+        nav ul li a { text-decoration: none; color: var(--bleu); font-weight: bold; }
+
+        .container { max-width: 850px; margin: 50px auto; padding: 0 20px; }
+        .header-dons { text-align: center; margin-bottom: 40px; }
+        
+        .intro-text { background: white; padding: 30px; border-radius: 15px; text-align: center; margin-bottom: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+
+        h2 { color: var(--bleu); border-bottom: 2px solid var(--or); display: inline-block; padding-bottom: 5px; margin-top: 40px; }
+
+        /* Cartes de Paiement */
+        .payment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 20px; }
+        
+        .method-card { 
+            background: white; border-radius: 12px; padding: 20px; 
+            display: flex; align-items: center; justify-content: space-between;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-left: 8px solid;
+        }
+        
+        .moov-card { border-left-color: var(--moov); }
+        .tmoney-card { border-left-color: var(--tmoney); }
+        .paypal-card { border-left-color: var(--paypal); }
+        .banque-card { border-left-color: var(--banque); }
+
+        .method-info h3 { margin: 0; font-size: 1.1rem; }
+        .method-number { font-size: 1.2rem; font-weight: bold; color: var(--bleu); margin-top: 5px; display: block; }
+        .bank-details { font-size: 0.9rem; background: #f9f9f9; padding: 10px; border-radius: 5px; margin-top: 10px; font-family: monospace; }
+        
+        .btn-paypal { background: var(--paypal); color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px; font-weight: bold; }
+
+        footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><img src="images/logo.png" alt="Logo EEMC" class="logo-img"></div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="activites.html">Activités</a></li>
+            <li><a href="priere.html">Prière</a></li>
+            <li><a href="ressources.html">Ressources</a></li>
+            <li><a href="dons.html" style="border-bottom: 2px solid var(--or);">Dons</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="header-dons">
+            <h1>Soutenir l'Œuvre du Seigneur</h1>
+            <p>Région des Savanes - Togo</p>
+        </div>
+
+        <div class="intro-text">
+            <p>"Chaque don soutient l'évangélisation et l'aide aux démunis."</p>
+        </div>
+
+        <h2>Paiements Mobiles (Togo)</h2>
+        <div class="payment-grid">
+            <div class="method-card moov-card">
+                <div class="method-info">
+                    <h3>Moov Money (Flooz)</h3>
+                    <span class="method-number">00228 98 88 84 26</span>
+                </div>
+                <i class="fas fa-mobile-alt fa-2x" style="color: var(--moov);"></i>
+            </div>
+
+            <div class="method-card tmoney-card">
+                <div class="method-info">
+                    <h3>T-Money (Mix by Yas)</h3>
+                    <span class="method-number">00228 92 22 78 74</span>
+                </div>
+                <i class="fas fa-coins fa-2x" style="color: var(--tmoney);"></i>
+            </div>
+        </div>
+
+        <h2>Soutien International</h2>
+        <div class="payment-grid">
+            <div class="method-card paypal-card">
+                <div class="method-info">
+                    <h3>PayPal</h3>
+                    <p>Faire un don sécurisé par carte bancaire.</p>
+                    <a href="https://www.paypal.com/paypalme/jesusemma571@gmail.com" target="_blank" class="btn-paypal">Donner via PayPal</a>
+                </div>
+                <i class="fab fa-paypal fa-2x" style="color: var(--paypal);"></i>
+            </div>
+
+            <div class="method-card banque-card">
+                <div class="method-info">
+                    <h3>Virement Bancaire</h3>
+                    <p>Informations du compte EEMC Togo :</p>
+                    <div class="bank-details">
+                        Banque : Ecobank Togo
+<br>
+                        Code Banque : ECOCTGTG
+<br>
+                        Numéro de Compte : 141695934001
+<br>
+                        IBAN / RIB : TG76...
+                    </div>
+                </div>
+                <i class="fas fa-university fa-2x" style="color: var(--banque);"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 EEMC Togo - Région des Savanes | <a href="politique.html" style="color:white;">Confidentialité</a></p>
+    </footer>
+
+</body>
+</html>
